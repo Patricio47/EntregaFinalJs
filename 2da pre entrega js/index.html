@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Carrito de Compras</h1>
+    <table id="productos">
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Acción</th>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>$100</td>
+        <td><input type="number" value="1" id="zapatos"></td>
+        <td><button onclick="agregar('zapatos')">Agregar</button></td>
+      </tr>
+      <tr>
+        <td>remera</td>
+        <td>$50</td>
+        <td><input type="number" value="1" id="camisa"></td>
+        <td><button onclick="agregar('camisa')">Agregar</button></td>
+      </tr>
+      <tr>
+        <td>Pantalón</td>
+        <td>$75</td>
+        <td><input type="number" value="1" id="pantalon"></td>
+        <td><button onclick="agregar('pantalon')">Agregar</button></td>
+      </tr>
+    </table>
+    <br><br>
+    <h2>Total: $<span id="total">0</span></h2>
+    <script src="tarea.js"></script>
+  </body>
+</html>
